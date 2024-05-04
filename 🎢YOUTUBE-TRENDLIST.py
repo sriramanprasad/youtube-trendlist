@@ -2,7 +2,7 @@ import streamlit as st
 from googleapiclient.discovery import build
 
 # YouTube API
-youtube_api_key = 'AIzaSyDru4McgKQ1TEIIXLez0TMHhW0D9QfYg2Q'
+youtube_api_key = st.secrets["api"]
 youtube = build('youtube', 'v3', developerKey=youtube_api_key)
 
 # Country codes for the four countries
